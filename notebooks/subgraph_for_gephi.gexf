@@ -1,0 +1,1060 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2025-08-31">
+    <creator>NetworkX 3.4.2</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes mode="static" class="edge">
+      <attribute id="0" title="relation" type="string" />
+    </attributes>
+    <nodes>
+      <node id="Gene::51444" label="Gene::51444" />
+      <node id="Gene::340267" label="Gene::340267" />
+      <node id="Compound::DB00073" label="Compound::DB00073" />
+      <node id="Gene::22794" label="Gene::22794" />
+      <node id="Compound::DB00170" label="Compound::DB00170" />
+      <node id="Compound::DB01413" label="Compound::DB01413" />
+      <node id="Gene::259295" label="Gene::259295" />
+      <node id="Gene::3178" label="Gene::3178" />
+      <node id="Anatomy::UBERON:0001675" label="Anatomy::UBERON:0001675" />
+      <node id="Gene::115207" label="Gene::115207" />
+      <node id="Compound::DB00216" label="Compound::DB00216" />
+      <node id="Gene::140458" label="Gene::140458" />
+      <node id="Gene::10286" label="Gene::10286" />
+      <node id="Gene::4712" label="Gene::4712" />
+      <node id="Compound::DB15160" label="Compound::DB15160" />
+      <node id="Biological Process::GO:0006875" label="Biological Process::GO:0006875" />
+      <node id="Gene::51281" label="Gene::51281" />
+      <node id="Gene::4698" label="Gene::4698" />
+      <node id="Anatomy::UBERON:0001044" label="Anatomy::UBERON:0001044" />
+      <node id="Anatomy::UBERON:0000948" label="Anatomy::UBERON:0000948" />
+      <node id="Gene::7016" label="Gene::7016" />
+      <node id="Gene::54461" label="Gene::54461" />
+      <node id="Compound::DB02929" label="Compound::DB02929" />
+      <node id="Gene::4129" label="Gene::4129" />
+      <node id="Gene::58490" label="Gene::58490" />
+      <node id="Gene::80335" label="Gene::80335" />
+      <node id="Gene::8620" label="Gene::8620" />
+      <node id="Gene::7324" label="Gene::7324" />
+      <node id="Gene::2921" label="Gene::2921" />
+      <node id="Gene::308" label="Gene::308" />
+      <node id="Gene::51808" label="Gene::51808" />
+      <node id="Gene::9114" label="Gene::9114" />
+      <node id="Gene::6432" label="Gene::6432" />
+      <node id="Biological Process::GO:0032107" label="Biological Process::GO:0032107" />
+      <node id="Gene::7483" label="Gene::7483" />
+      <node id="Anatomy::UBERON:0002037" label="Anatomy::UBERON:0002037" />
+      <node id="Gene::5829" label="Gene::5829" />
+      <node id="Gene::1813" label="Gene::1813" />
+      <node id="Gene::23705" label="Gene::23705" />
+      <node id="Compound::DB09303" label="Compound::DB09303" />
+      <node id="Gene::5352" label="Gene::5352" />
+      <node id="Gene::9716" label="Gene::9716" />
+      <node id="Compound::DB13657" label="Compound::DB13657" />
+      <node id="Compound::DB13954" label="Compound::DB13954" />
+      <node id="Compound::DB11130" label="Compound::DB11130" />
+      <node id="Compound::DB05099" label="Compound::DB05099" />
+      <node id="Compound::DB06264" label="Compound::DB06264" />
+      <node id="Compound::DB09167" label="Compound::DB09167" />
+      <node id="Compound::DB00891" label="Compound::DB00891" />
+      <node id="Gene::2782" label="Gene::2782" />
+    </nodes>
+    <edges>
+      <edge source="Gene::51444" target="Gene::7324" id="0">
+        <attvalues>
+          <attvalue for="0" value="STRING::CATALYSIS::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::51444" target="Gene::54461" id="1">
+        <attvalues>
+          <attvalue for="0" value="STRING::CATALYSIS::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::51444" target="Gene::140458" id="2">
+        <attvalues>
+          <attvalue for="0" value="STRING::CATALYSIS::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::340267" target="Gene::5352" id="3">
+        <attvalues>
+          <attvalue for="0" value="STRING::REACTION::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Compound::DB00073" target="Compound::DB15160" id="4">
+        <attvalues>
+          <attvalue for="0" value="DRUGBANK::ddi-interactor-in::Compound:Compound" />
+        </attvalues>
+      </edge>
+      <edge source="Compound::DB00073" target="Compound::DB09303" id="5">
+        <attvalues>
+          <attvalue for="0" value="DRUGBANK::ddi-interactor-in::Compound:Compound" />
+        </attvalues>
+      </edge>
+      <edge source="Compound::DB00073" target="Compound::DB13954" id="6">
+        <attvalues>
+          <attvalue for="0" value="DRUGBANK::ddi-interactor-in::Compound:Compound" />
+        </attvalues>
+      </edge>
+      <edge source="Compound::DB00073" target="Compound::DB05099" id="7">
+        <attvalues>
+          <attvalue for="0" value="DRUGBANK::ddi-interactor-in::Compound:Compound" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::22794" target="Gene::5829" id="8">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::Gr&gt;G::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::22794" target="Gene::6432" id="9">
+        <attvalues>
+          <attvalue for="0" value="STRING::REACTION::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::22794" target="Gene::3178" id="10">
+        <attvalues>
+          <attvalue for="0" value="STRING::REACTION::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::22794" target="Gene::10286" id="11">
+        <attvalues>
+          <attvalue for="0" value="STRING::REACTION::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::22794" target="Gene::9716" id="12">
+        <attvalues>
+          <attvalue for="0" value="STRING::REACTION::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::22794" target="Gene::4712" id="13">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::Gr&gt;G::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Compound::DB00170" target="Gene::4129" id="14">
+        <attvalues>
+          <attvalue for="0" value="bioarx::DrugHumGen:Compound:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Compound::DB00170" target="Gene::80335" id="15">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::CdG::Compound:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Compound::DB00170" target="Gene::23705" id="16">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::CuG::Compound:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Compound::DB00170" target="Gene::7324" id="17">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::CdG::Compound:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Compound::DB00170" target="Gene::4698" id="18">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::CdG::Compound:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Compound::DB00170" target="Gene::7016" id="19">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::CuG::Compound:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Compound::DB01413" target="Compound::DB05099" id="20">
+        <attvalues>
+          <attvalue for="0" value="DRUGBANK::ddi-interactor-in::Compound:Compound" />
+        </attvalues>
+      </edge>
+      <edge source="Compound::DB01413" target="Compound::DB13657" id="21">
+        <attvalues>
+          <attvalue for="0" value="DRUGBANK::ddi-interactor-in::Compound:Compound" />
+        </attvalues>
+      </edge>
+      <edge source="Compound::DB01413" target="Compound::DB11130" id="22">
+        <attvalues>
+          <attvalue for="0" value="DRUGBANK::ddi-interactor-in::Compound:Compound" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::259295" target="Gene::2782" id="23">
+        <attvalues>
+          <attvalue for="0" value="STRING::CATALYSIS::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::259295" target="Gene::2921" id="24">
+        <attvalues>
+          <attvalue for="0" value="STRING::REACTION::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::259295" target="Gene::1813" id="25">
+        <attvalues>
+          <attvalue for="0" value="STRING::CATALYSIS::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::3178" target="Gene::6432" id="26">
+        <attvalues>
+          <attvalue for="0" value="STRING::REACTION::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::3178" target="Gene::9716" id="27">
+        <attvalues>
+          <attvalue for="0" value="INTACT::ASSOCIATION::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::3178" target="Gene::10286" id="28">
+        <attvalues>
+          <attvalue for="0" value="STRING::BINDING::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::3178" target="Gene::22794" id="29">
+        <attvalues>
+          <attvalue for="0" value="STRING::REACTION::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0001675" target="Gene::51281" id="30">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AdG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0001675" target="Gene::4712" id="31">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0001675" target="Gene::5829" id="32">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AuG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0001675" target="Gene::6432" id="33">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0001675" target="Gene::51808" id="34">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AuG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0001675" target="Gene::22794" id="35">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0001675" target="Gene::340267" id="36">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AuG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0001675" target="Gene::7016" id="37">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0001675" target="Gene::54461" id="38">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AdG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0001675" target="Gene::115207" id="39">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AuG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0001675" target="Gene::2921" id="40">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0001675" target="Gene::51444" id="41">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0001675" target="Gene::23705" id="42">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AuG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0001675" target="Gene::2782" id="43">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0001675" target="Gene::58490" id="44">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0001675" target="Gene::80335" id="45">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0001675" target="Gene::10286" id="46">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0001675" target="Gene::4129" id="47">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0001675" target="Gene::5352" id="48">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0001675" target="Gene::9114" id="49">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AdG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0001675" target="Gene::7324" id="50">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0001675" target="Gene::308" id="51">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::115207" target="Gene::115207" id="52">
+        <attvalues>
+          <attvalue for="0" value="INTACT::DIRECT INTERACTION::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Compound::DB00216" target="Compound::DB00891" id="53">
+        <attvalues>
+          <attvalue for="0" value="DRUGBANK::ddi-interactor-in::Compound:Compound" />
+        </attvalues>
+      </edge>
+      <edge source="Compound::DB00216" target="Compound::DB09167" id="54">
+        <attvalues>
+          <attvalue for="0" value="DRUGBANK::ddi-interactor-in::Compound:Compound" />
+        </attvalues>
+      </edge>
+      <edge source="Compound::DB00216" target="Compound::DB06264" id="55">
+        <attvalues>
+          <attvalue for="0" value="DRUGBANK::ddi-interactor-in::Compound:Compound" />
+        </attvalues>
+      </edge>
+      <edge source="Compound::DB00216" target="Compound::DB11130" id="56">
+        <attvalues>
+          <attvalue for="0" value="DRUGBANK::ddi-interactor-in::Compound:Compound" />
+        </attvalues>
+      </edge>
+      <edge source="Compound::DB00216" target="Compound::DB13954" id="57">
+        <attvalues>
+          <attvalue for="0" value="DRUGBANK::ddi-interactor-in::Compound:Compound" />
+        </attvalues>
+      </edge>
+      <edge source="Compound::DB00216" target="Compound::DB13657" id="58">
+        <attvalues>
+          <attvalue for="0" value="DRUGBANK::ddi-interactor-in::Compound:Compound" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::140458" target="Gene::51444" id="59">
+        <attvalues>
+          <attvalue for="0" value="STRING::CATALYSIS::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::140458" target="Gene::7324" id="60">
+        <attvalues>
+          <attvalue for="0" value="STRING::BINDING::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::140458" target="Gene::54461" id="61">
+        <attvalues>
+          <attvalue for="0" value="STRING::REACTION::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::10286" target="Gene::9716" id="62">
+        <attvalues>
+          <attvalue for="0" value="STRING::REACTION::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::10286" target="Gene::6432" id="63">
+        <attvalues>
+          <attvalue for="0" value="STRING::BINDING::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::10286" target="Gene::22794" id="64">
+        <attvalues>
+          <attvalue for="0" value="STRING::REACTION::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::10286" target="Gene::3178" id="65">
+        <attvalues>
+          <attvalue for="0" value="STRING::CATALYSIS::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::4712" target="Gene::4698" id="66">
+        <attvalues>
+          <attvalue for="0" value="STRING::REACTION::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::4698" target="Gene::7016" id="67">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::Gr&gt;G::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::4698" target="Gene::4712" id="68">
+        <attvalues>
+          <attvalue for="0" value="STRING::REACTION::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0001044" target="Gene::4712" id="69">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0001044" target="Gene::5352" id="70">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0001044" target="Gene::58490" id="71">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0001044" target="Gene::7016" id="72">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0001044" target="Gene::3178" id="73">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0001044" target="Gene::1813" id="74">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AuG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0001044" target="Gene::2782" id="75">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AdG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0001044" target="Gene::6432" id="76">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AdG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0001044" target="Gene::4129" id="77">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0001044" target="Gene::10286" id="78">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0001044" target="Gene::340267" id="79">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0001044" target="Gene::54461" id="80">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0001044" target="Gene::51444" id="81">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0001044" target="Gene::115207" id="82">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0001044" target="Gene::308" id="83">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0001044" target="Gene::140458" id="84">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0001044" target="Gene::80335" id="85">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AdG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0001044" target="Gene::9114" id="86">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0001044" target="Gene::23705" id="87">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AuG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0001044" target="Gene::51281" id="88">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0001044" target="Gene::22794" id="89">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0001044" target="Gene::4698" id="90">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0001044" target="Gene::7324" id="91">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0000948" target="Gene::80335" id="92">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0000948" target="Gene::5829" id="93">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AuG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0000948" target="Gene::22794" id="94">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0000948" target="Gene::340267" id="95">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AuG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0000948" target="Gene::58490" id="96">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0000948" target="Gene::51444" id="97">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AdG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0000948" target="Gene::140458" id="98">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0000948" target="Gene::115207" id="99">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0000948" target="Gene::4129" id="100">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0000948" target="Gene::10286" id="101">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0000948" target="Gene::6432" id="102">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AdG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0000948" target="Gene::4712" id="103">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AuG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0000948" target="Gene::4698" id="104">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AuG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0000948" target="Gene::2921" id="105">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0000948" target="Gene::7016" id="106">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AdG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0000948" target="Gene::5352" id="107">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AdG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0000948" target="Gene::7324" id="108">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AuG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0000948" target="Gene::54461" id="109">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0000948" target="Gene::9114" id="110">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AdG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0000948" target="Gene::51281" id="111">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0000948" target="Gene::51808" id="112">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0000948" target="Gene::1813" id="113">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AdG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0000948" target="Gene::3178" id="114">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0000948" target="Gene::2782" id="115">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::54461" target="Gene::140458" id="116">
+        <attvalues>
+          <attvalue for="0" value="STRING::CATALYSIS::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::54461" target="Gene::51444" id="117">
+        <attvalues>
+          <attvalue for="0" value="STRING::REACTION::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::54461" target="Gene::7324" id="118">
+        <attvalues>
+          <attvalue for="0" value="STRING::BINDING::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Compound::DB02929" target="Gene::308" id="119">
+        <attvalues>
+          <attvalue for="0" value="bioarx::DrugHumGen:Compound:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::4129" target="Gene::1813" id="120">
+        <attvalues>
+          <attvalue for="0" value="STRING::OTHER::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::4129" target="Gene::4129" id="121">
+        <attvalues>
+          <attvalue for="0" value="bioarx::HumGenHumGen:Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::58490" target="Gene::51808" id="122">
+        <attvalues>
+          <attvalue for="0" value="STRING::REACTION::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::58490" target="Gene::58490" id="123">
+        <attvalues>
+          <attvalue for="0" value="INTACT::PHYSICAL ASSOCIATION::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::8620" target="Biological Process::GO:0032107" id="124">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::GpBP::Gene:Biological Process" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::8620" target="Gene::2782" id="125">
+        <attvalues>
+          <attvalue for="0" value="STRING::CATALYSIS::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::8620" target="Biological Process::GO:0006875" id="126">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::GpBP::Gene:Biological Process" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::7324" target="Gene::140458" id="127">
+        <attvalues>
+          <attvalue for="0" value="STRING::BINDING::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::7324" target="Gene::54461" id="128">
+        <attvalues>
+          <attvalue for="0" value="STRING::BINDING::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::7324" target="Gene::51444" id="129">
+        <attvalues>
+          <attvalue for="0" value="STRING::REACTION::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::2921" target="Gene::2782" id="130">
+        <attvalues>
+          <attvalue for="0" value="STRING::REACTION::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::2921" target="Gene::259295" id="131">
+        <attvalues>
+          <attvalue for="0" value="STRING::REACTION::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::2921" target="Gene::1813" id="132">
+        <attvalues>
+          <attvalue for="0" value="STRING::REACTION::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::308" target="Gene::5829" id="133">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::Gr&gt;G::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::308" target="Gene::22794" id="134">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::Gr&gt;G::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::308" target="Gene::308" id="135">
+        <attvalues>
+          <attvalue for="0" value="bioarx::HumGenHumGen:Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::51808" target="Gene::58490" id="136">
+        <attvalues>
+          <attvalue for="0" value="STRING::REACTION::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::9114" target="Biological Process::GO:0006875" id="137">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::GpBP::Gene:Biological Process" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::6432" target="Gene::9716" id="138">
+        <attvalues>
+          <attvalue for="0" value="STRING::REACTION::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::6432" target="Gene::22794" id="139">
+        <attvalues>
+          <attvalue for="0" value="STRING::BINDING::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::6432" target="Gene::3178" id="140">
+        <attvalues>
+          <attvalue for="0" value="STRING::CATALYSIS::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::6432" target="Gene::10286" id="141">
+        <attvalues>
+          <attvalue for="0" value="STRING::BINDING::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0002037" target="Gene::115207" id="142">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AuG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0002037" target="Gene::340267" id="143">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0002037" target="Gene::54461" id="144">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0002037" target="Gene::10286" id="145">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0002037" target="Gene::1813" id="146">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0002037" target="Gene::308" id="147">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AdG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0002037" target="Gene::9114" id="148">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0002037" target="Gene::51281" id="149">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0002037" target="Gene::2782" id="150">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0002037" target="Gene::51444" id="151">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0002037" target="Gene::22794" id="152">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0002037" target="Gene::80335" id="153">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0002037" target="Gene::6432" id="154">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0002037" target="Gene::3178" id="155">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0002037" target="Gene::51808" id="156">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0002037" target="Gene::5352" id="157">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0002037" target="Gene::58490" id="158">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0002037" target="Gene::4698" id="159">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0002037" target="Gene::7016" id="160">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0002037" target="Gene::4712" id="161">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0002037" target="Gene::23705" id="162">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AuG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Anatomy::UBERON:0002037" target="Gene::4129" id="163">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::AeG::Anatomy:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::5829" target="Gene::2782" id="164">
+        <attvalues>
+          <attvalue for="0" value="STRING::CATALYSIS::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::1813" target="Gene::2921" id="165">
+        <attvalues>
+          <attvalue for="0" value="STRING::REACTION::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::1813" target="Gene::2782" id="166">
+        <attvalues>
+          <attvalue for="0" value="STRING::REACTION::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::1813" target="Gene::1813" id="167">
+        <attvalues>
+          <attvalue for="0" value="INTACT::PHYSICAL ASSOCIATION::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::1813" target="Gene::259295" id="168">
+        <attvalues>
+          <attvalue for="0" value="STRING::REACTION::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::1813" target="Gene::4129" id="169">
+        <attvalues>
+          <attvalue for="0" value="STRING::OTHER::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::23705" target="Gene::7483" id="170">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::GcG::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::23705" target="Gene::23705" id="171">
+        <attvalues>
+          <attvalue for="0" value="INTACT::DIRECT INTERACTION::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Compound::DB09303" target="Compound::DB13954" id="172">
+        <attvalues>
+          <attvalue for="0" value="DRUGBANK::ddi-interactor-in::Compound:Compound" />
+        </attvalues>
+      </edge>
+      <edge source="Compound::DB09303" target="Compound::DB15160" id="173">
+        <attvalues>
+          <attvalue for="0" value="DRUGBANK::ddi-interactor-in::Compound:Compound" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::5352" target="Gene::340267" id="174">
+        <attvalues>
+          <attvalue for="0" value="STRING::BINDING::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::5352" target="Gene::5352" id="175">
+        <attvalues>
+          <attvalue for="0" value="bioarx::HumGenHumGen:Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::5352" target="Gene::5829" id="176">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::Gr&gt;G::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::9716" target="Gene::10286" id="177">
+        <attvalues>
+          <attvalue for="0" value="STRING::REACTION::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::9716" target="Gene::3178" id="178">
+        <attvalues>
+          <attvalue for="0" value="STRING::REACTION::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::9716" target="Gene::6432" id="179">
+        <attvalues>
+          <attvalue for="0" value="STRING::REACTION::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::9716" target="Gene::22794" id="180">
+        <attvalues>
+          <attvalue for="0" value="STRING::REACTION::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Compound::DB13657" target="Compound::DB13954" id="181">
+        <attvalues>
+          <attvalue for="0" value="DRUGBANK::ddi-interactor-in::Compound:Compound" />
+        </attvalues>
+      </edge>
+      <edge source="Compound::DB11130" target="Compound::DB13657" id="182">
+        <attvalues>
+          <attvalue for="0" value="DRUGBANK::ddi-interactor-in::Compound:Compound" />
+        </attvalues>
+      </edge>
+      <edge source="Compound::DB11130" target="Compound::DB13954" id="183">
+        <attvalues>
+          <attvalue for="0" value="DRUGBANK::ddi-interactor-in::Compound:Compound" />
+        </attvalues>
+      </edge>
+      <edge source="Compound::DB05099" target="Compound::DB13954" id="184">
+        <attvalues>
+          <attvalue for="0" value="DRUGBANK::ddi-interactor-in::Compound:Compound" />
+        </attvalues>
+      </edge>
+      <edge source="Compound::DB05099" target="Compound::DB13657" id="185">
+        <attvalues>
+          <attvalue for="0" value="DRUGBANK::ddi-interactor-in::Compound:Compound" />
+        </attvalues>
+      </edge>
+      <edge source="Compound::DB06264" target="Compound::DB09167" id="186">
+        <attvalues>
+          <attvalue for="0" value="DRUGBANK::ddi-interactor-in::Compound:Compound" />
+        </attvalues>
+      </edge>
+      <edge source="Compound::DB06264" target="Compound::DB11130" id="187">
+        <attvalues>
+          <attvalue for="0" value="DRUGBANK::ddi-interactor-in::Compound:Compound" />
+        </attvalues>
+      </edge>
+      <edge source="Compound::DB09167" target="Compound::DB13657" id="188">
+        <attvalues>
+          <attvalue for="0" value="DRUGBANK::ddi-interactor-in::Compound:Compound" />
+        </attvalues>
+      </edge>
+      <edge source="Compound::DB09167" target="Compound::DB13954" id="189">
+        <attvalues>
+          <attvalue for="0" value="DRUGBANK::ddi-interactor-in::Compound:Compound" />
+        </attvalues>
+      </edge>
+      <edge source="Compound::DB09167" target="Compound::DB11130" id="190">
+        <attvalues>
+          <attvalue for="0" value="DRUGBANK::ddi-interactor-in::Compound:Compound" />
+        </attvalues>
+      </edge>
+      <edge source="Compound::DB00891" target="Compound::DB13954" id="191">
+        <attvalues>
+          <attvalue for="0" value="DRUGBANK::ddi-interactor-in::Compound:Compound" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::2782" target="Gene::259295" id="192">
+        <attvalues>
+          <attvalue for="0" value="STRING::BINDING::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::2782" target="Gene::8620" id="193">
+        <attvalues>
+          <attvalue for="0" value="STRING::BINDING::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::2782" target="Gene::1813" id="194">
+        <attvalues>
+          <attvalue for="0" value="STRING::CATALYSIS::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::2782" target="Gene::5829" id="195">
+        <attvalues>
+          <attvalue for="0" value="STRING::CATALYSIS::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::2782" target="Gene::22794" id="196">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::Gr&gt;G::Gene:Gene" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::2782" target="Biological Process::GO:0006875" id="197">
+        <attvalues>
+          <attvalue for="0" value="Hetionet::GpBP::Gene:Biological Process" />
+        </attvalues>
+      </edge>
+      <edge source="Gene::2782" target="Gene::2921" id="198">
+        <attvalues>
+          <attvalue for="0" value="STRING::BINDING::Gene:Gene" />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>
