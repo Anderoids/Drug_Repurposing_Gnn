@@ -16,11 +16,11 @@ class DistMult(nn.Module):
         nn.init.xavier_uniform_(self.entity_emb.weight)
         nn.init.xavier_uniform_(self.rel_emb.weight)
 
-    def forward(self, heads, rels, tails):
+    def forward(self, heads, rels, tails, edge_index=None, edge_type=None):
         h = self.dropout(self.entity_emb(heads))
         r = self.dropout(self.rel_emb(rels))
         t = self.dropout(self.entity_emb(tails))
-        score = (h * r * t).sum(-1)
+        score = torch.sum(h * r * t, dim=-1)
         return score
 
 
@@ -59,7 +59,7 @@ class SimpleGraphSAGE(nn.Module):
         self.W = nn.Linear(2 * dim, dim)
         self.dropout = nn.Dropout(dropout)
 
-    def forward(self, heads, rels, tails):
+    def forward(self, heads, rels, tails, edge_index=None, edge_type=None):
         h = self.dropout(self.entity_emb(heads))
         r = self.dropout(self.rel_emb(rels))
         t = self.dropout(self.entity_emb(tails))
@@ -67,6 +67,7 @@ class SimpleGraphSAGE(nn.Module):
         out = self.W(concat)
         score = (out * t).sum(-1)
         return score
+
 
 
 
