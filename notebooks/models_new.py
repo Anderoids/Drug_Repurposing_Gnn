@@ -2,8 +2,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from torch_geometric.nn import RGCNConv
-
-
+import numpy as np
 
 # Baseline Models
 
@@ -69,17 +68,19 @@ class SimpleGraphSAGE(nn.Module):
         score = (out * t).sum(-1)
         return score
 
-# Novel Proposed Model
+
+
+# RGCN Encoder
 
 class RGCNEncoder(nn.Module):
-    """Multi-layer RGCN encoder for heterogeneous graphs"""
-    def __init__(self, num_entities, num_relations, dim=200, num_layers=2, dropout=0.2):
+    """RGCN Encoder for heterogeneous knowledge graphs."""
+    def __init__(self, num_entities, num_relations, hidden_dim=200, num_layers=2, dropout=0.2, num_bases=30):
         super().__init__()
-        self.entity_emb = nn.Embedding(num_entities, dim)
+        self.entity_emb = nn.Embedding(num_entities, hidden_dim)
         nn.init.xavier_uniform_(self.entity_emb.weight)
 
         self.convs = nn.ModuleList([
-            RGCNConv(dim, dim, num_relations, num_bases=30)
+            RGCNConv(hidden_dim, hidden_dim, num_relations, num_bases=num_bases)
             for _ in range(num_layers)
         ])
         self.dropout = nn.Dropout(dropout)
@@ -87,60 +88,100 @@ class RGCNEncoder(nn.Module):
     def forward(self, edge_index, edge_type):
         x = self.entity_emb.weight
         for conv in self.convs:
-            x = self.dropout(F.relu(conv(x, edge_index, edge_type)))
+            x = F.relu(conv(x, edge_index, edge_type))
+            x = self.dropout(x)
         return x
 
+# Path-Regularized Bilinear Decoder
 
 class PathRegularizedDecoder(nn.Module):
-    """Decoder combining embeddings with path-support evidence"""
+    """Decoder combining entity embeddings with path-support scores."""
     def __init__(self, hidden_dim, alpha=0.5):
         super().__init__()
         self.rel_mat = nn.Parameter(torch.randn(hidden_dim, hidden_dim))
         nn.init.xavier_uniform_(self.rel_mat)
         self.alpha = alpha
 
-    def forward(self, drug_emb, disease_emb, path_support=None):
-        score = (drug_emb @ self.rel_mat @ disease_emb.T).diag()
+    def forward(self, head_emb, tail_emb, path_support=None):
+        # Bilinear score
+        score = torch.sum(head_emb @ self.rel_mat * tail_emb, dim=-1)
         if path_support is not None:
             score = score + self.alpha * path_support
         return score
 
 
+# Full Proposed Model
+
 class ProposedRGCNModel(nn.Module):
     """
-    Full proposed model:
-    - RGCN encoder
+    Novel Knowledge Graph Link Prediction Model:
+    - RGCN encoder for entity embeddings
     - Path-regularized bilinear decoder
     """
-    def __init__(self, num_entities, num_relations, dim=200, num_layers=2, dropout=0.2, alpha=0.5):
+    def __init__(self, num_entities, num_relations, hidden_dim=200, num_layers=2, dropout=0.2, alpha=0.5):
         super().__init__()
-        self.encoder = RGCNEncoder(num_entities, num_relations, dim, num_layers, dropout)
-        self.decoder = PathRegularizedDecoder(dim, alpha)
+        self.encoder = RGCNEncoder(num_entities, num_relations, hidden_dim, num_layers, dropout)
+        self.decoder = PathRegularizedDecoder(hidden_dim, alpha)
 
     def forward(self, triples, edge_index, edge_type, path_support=None):
-        # Encode entities
+        """
+        triples: tuple of (heads, relations, tails)
+        """
+        heads, rels, tails = triples
         x = self.encoder(edge_index, edge_type)
 
-        heads, rels, tails = triples
-        drug_emb = x[heads]
-        disease_emb = x[tails]
+        # Extract embeddings for heads and tails
+        head_emb = x[heads]
+        tail_emb = x[tails]
 
-        # Compute score with path evidence
-        score = self.decoder(drug_emb, disease_emb, path_support)
+        # Compute scores
+        score = self.decoder(head_emb, tail_emb, path_support)
         return score
-    
-# Calibration Wrapper
 
+# Optional Temperature Calibration
 
 class ModelWithTemperature(nn.Module):
-    """
-    Wraps a model to add temperature scaling
-    for probability calibration.
-    """
-    def __init__(self, model):
+    """Wraps a model to add temperature scaling for probability calibration."""
+    def __init__(self, model, init_temp=1.5):
         super().__init__()
         self.model = model
-        self.temperature = nn.Parameter(torch.ones(1) * 1.5)
+        self.temperature = nn.Parameter(torch.ones(1) * init_temp)
 
     def forward(self, logits):
         return logits / self.temperature
+
+
+def validate_and_map_triples(triples, ent2id, rel2id):
+    """
+    Validate triples and map them to indices.
+    Any entity or relation not in ent2id/rel2id will be removed.
+    
+    Args:
+        triples: List of (head, rel, tail) tuples with original names/ids
+        ent2id: dict mapping entity -> index
+        rel2id: dict mapping relation -> index
+        
+    Returns:
+        Tensor of shape [3, N] with (heads, rels, tails) indices
+    """
+    heads, rels, tails = [], [], []
+    skipped = 0
+
+    for h, r, t in triples:
+        if h not in ent2id or t not in ent2id or r not in rel2id:
+            skipped += 1
+            continue
+        heads.append(ent2id[h])
+        tails.append(ent2id[t])
+        rels.append(rel2id[r])
+
+    if skipped > 0:
+        print(f"Skipped {skipped} triples due to missing entities or relations.")
+
+    # Convert to torch tensors
+    heads = torch.tensor(heads, dtype=torch.long)
+    tails = torch.tensor(tails, dtype=torch.long)
+    rels = torch.tensor(rels, dtype=torch.long)
+
+    return heads, rels, tails
+

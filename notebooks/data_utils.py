@@ -105,3 +105,5 @@ def compute_2hop_drug_gene_disease_support(train_df: pd.DataFrame, ent2id: Dict[
     max_count = max(pair_counts.values())
     pair_support = {k: v / max_count for k, v in pair_counts.items()}
     return pair_counts, pair_support
+
+
