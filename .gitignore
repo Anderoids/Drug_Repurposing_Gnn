@@ -5,3 +5,5 @@ shared
 data/processed/*.csv
 data/*.csv
 data/train_inductive.csv
+key.pub
+key
